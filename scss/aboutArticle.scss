@@ -1,0 +1,89 @@
+#about {
+  display: flex;
+  background: $navy-black;
+  .layerTwo{
+    align-items: flex-end;
+  }
+  .about-logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 90%;
+    width: 50%;
+    padding-right: 5%;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 85%;
+      height: 90%;
+    }
+    .logo-about {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 85%;
+      height: 40%;
+      background-image: url("../assets/cheshire-Logo.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+    }
+    .logo-about:hover {
+      cursor: pointer;
+      opacity: $trans-coma8;
+    }
+  }
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 90%;
+    width: 50%;
+    padding-left: 5%;
+    color: $just-white;
+
+    .text-about {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      height: 25%;
+      hr {
+        width: 30%;
+        border: none;
+        height: 2px;
+        color: $cheshire-red;
+        background: $cheshire-red;
+      }
+      .silke-marinuota {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin-left: -1%;
+        width: 12%;
+
+      }
+      .marinuota-silke {
+        width: 84%;
+      }
+    }
+    .text-about:nth-of-type(1) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: 5%;
+      margin-bottom: 5%;
+      padding-top: 5%;
+      padding-bottom: 5%;
+      padding-right: 5%;
+      height: 50%;
+      h1 {
+        padding-right: 40%;
+      }
+    }
+  }
+}

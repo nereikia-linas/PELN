@@ -1,0 +1,26 @@
+footer {
+  width: 100%;
+  height: 12vh;
+  background: $navy-black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .footer-soc {
+    width: 50%;
+    padding-left: 7%;
+    display: flex;
+    justify-content: space-around;
+    color: $cheshire-red;
+  }
+  span {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 11%;
+    width: 50%;
+    font-size: 24px;
+    color: $just-white;
+    opacity: $trans-coma5;
+    font-size: $chshreFontSize-1-coma-2;
+  }
+}

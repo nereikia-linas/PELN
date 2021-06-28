@@ -1,0 +1,52 @@
+@import "featureSlides";
+
+#features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:
+  linear-gradient(90deg, rgba(226,120,102,0.42) 0%, rgba(102,150,226,0.42) 100%),
+  url("../assets/features-cover.png");
+  background-size: cover;
+
+  // Buttons stuff
+  .features-buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .features-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+      width: 100px;
+      height: 100px;
+      background: $cheshire-brick;
+      color: $just-white;
+      margin: 20px;
+      box-shadow: $cheshire-Shadow;
+      transition: all 0.05s;
+      &:hover {
+        cursor: pointer;
+        span {
+          transform: rotate(0deg);
+          opacity: $trans-coma5;
+          font-weight: 600;
+          transition: all 0.5s;
+        }
+      }
+      span {
+        transform: rotate(-45deg);
+        opacity: $trans-coma5;
+      }
+    }
+    .features-button-active {
+      background: $cheshire-red;
+      span {
+        opacity: 1;
+        transition: all 0.5s;
+      }
+    }
+  }
+}

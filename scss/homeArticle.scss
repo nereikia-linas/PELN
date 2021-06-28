@@ -1,0 +1,51 @@
+#home {
+  display: flex;
+  background: $home-darken-mask;
+  background-image: url(../assets/home-cover.png);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: 50% 38%;
+  height: 86vh;
+  .home-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+    h1 {
+      color: $just-white;
+    }
+    p {
+      color: $just-white;
+      opacity: $trans-coma8;
+    }
+    hr {
+      width: 10%;
+      margin-left: 10px;
+      border: none;
+      height: 2px;
+      color: $just-white;
+      background: $just-white;
+      opacity: $trans-coma8;
+    }
+    img {
+      width: 247px;
+    }
+    button {
+      position: relative;
+      background: none;
+      color: $just-white;
+      border: solid 2px $just-white;
+      width: 135px;
+      height: 42px;
+      transition: all 0.3s;
+    }
+    button:hover {
+      color: $cheshire-red;
+      border: solid 3px $cheshire-green;
+      background: $home-darken-mask;
+      box-shadow: $cheshire-Shadow;
+      cursor: pointer;
+    }
+  }
+  @import "form";
+}

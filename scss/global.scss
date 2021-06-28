@@ -1,0 +1,27 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat',sans-serif;
+}
+
+article {
+  height: 100vh;
+  width: 100%;
+  padding-top: 10vh;
+  display: flex;
+  justify-content: center;
+}
+
+article:nth-of-type(1){
+  padding-top: 18vh;
+}
+
+.layerTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 78%;
+  height: 90%;
+}

@@ -1,0 +1,136 @@
+@mixin avatars {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  align-content: center;
+  position: absolute;
+  left: 5%;
+  top: 110%;
+}
+
+#reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $just-white;
+  min-width: 400px;
+  .layerTwo {
+    display: flex;
+    flex-direction: column;
+    .reviewsTop {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 18%;
+      h1 {
+        color: $navy-black;
+      }
+      hr {
+        width: 6%;
+        border: none;
+        height: 2px;
+        color: $cheshire-blue;
+        background: $cheshire-blue;
+        margin-bottom: 1%;
+      }
+    }
+  }
+}
+
+
+// .swiper-container,
+.swiper1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+
+  .swiper-pagination-bullet {
+    background: $cheshire-red;
+  }
+}
+
+
+
+
+.swiper-slide {
+  width: 30%;
+  
+}
+
+.rvws-slide-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  padding-top: 10%;
+  margin-top: 10%;
+  .rvws-slide-chat {
+    position: relative;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    width: 80%;
+    height: 55%;
+    border-radius: 5px;
+    background: $cheshire-blue;
+    color: $just-white;
+    font-size: $chshreFontSize-1-coma-1;
+    line-height: 1.4;
+    &::after {
+      content: "";
+      width: 0;
+       height: 0;
+       border-left: 20px solid transparent;
+       border-right: 20px solid transparent;
+       border-top: 20px solid $cheshire-blue;
+       position: absolute;
+       left: 10%;
+       bottom: -9px;
+    }
+  span {
+    width: 92%;
+    position: absolute;
+    bottom: 20px;
+  }
+  .avatars-name {
+    position: absolute;
+    top: 115%;
+    left: 35%;
+    h3 {
+      color: $night-Gray;
+    }
+    p {
+      color: $morning-Gray;
+    }
+  }
+  }
+  .avatars-1 {
+    @include avatars;
+    background: url(../assets/manager.png);
+    background-position: center;
+    background-size: 70px 70px;
+  }
+  .avatars-2 {
+    @include avatars;
+    background: url(../assets/freelancer.png);
+    background-position: center;
+    background-size: 70px 70px;
+  }
+  .avatars-3 {
+    @include avatars;
+    background: url(../assets/photographer.png);
+    background-position: center;
+    background-size: 70px 70px;
+  }
+  .avatars-4 {
+    @include avatars;
+    background: url(../assets/my_face_icon.png);
+    background-position: center;
+    background-size: 70px 70px;
+  }
+}

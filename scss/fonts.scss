@@ -1,0 +1,72 @@
+@import "colors.scss";
+
+$chshreFontSize-2-coma-2: 2.2rem;
+$chshreFontSize-1-coma-6: 1.6rem;
+$chshreFontSize-1-coma-4: 1.4rem;
+$chshreFontSize-1-coma-2: 1.2rem;
+$chshreFontSize-1-coma-1: 1.1rem;
+$chshreFontSize-0: 14px;
+
+h1 {
+  font-size: $chshreFontSize-2-coma-2;
+  font-weight: 600;
+}
+
+h1.sub {
+  font-size: $chshreFontSize-1-coma-6;
+}
+
+h2 {
+  font-size: $chshreFontSize-1-coma-4;
+  font-weight: 600;
+}
+
+h2.light {
+  font-weight: normal;
+}
+
+h3 {
+  font-size: $chshreFontSize-1-coma-2;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: $chshreFontSize-1-coma-1;
+  font-weight: 600;
+}
+
+p {
+  font-size: $chshreFontSize-0;
+  line-height: 1.5;
+}
+
+table {
+  font-size: 14px;
+}
+
+.fa-stack {
+  font-size: 1.6rem;
+}
+  i {
+    vertical-align: middle;
+  }
+
+
+
+.important {
+  font-size: 1.1rem;
+  font-weight: normal;
+}
+
+.significant {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+::placeholder {
+  color: $morning-Gray;
+}
+
+::-ms-input-placeholder {
+ color: $morning-Gray;
+}
