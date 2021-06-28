@@ -1,4 +1,9 @@
 @media screen and (max-width: 1000px){
+h1 {
+  font-size: $chshreFontSize-1-coma-6;
+  text-align: center;
+}
+
   #home {
     height: 100vh;
     padding-top: 20vh;
@@ -9,10 +14,10 @@
       width: 80%;
       .home-text {
         width: 50%;
-        .mqh {
+        .irashom {
           display: inline-flex;
         }
-        .mqhh {
+        .trinam {
           display: none;
         }
       }
@@ -25,9 +30,9 @@
         }
       }
     }
-    h1 {
-      font-size: $chshreFontSize-1-coma-6;
-    }
+    // h1 {
+    //   font-size: $chshreFontSize-1-coma-6;
+    // }
     p {
       line-height: 1.2;
     }
@@ -51,13 +56,17 @@
       .swiper2 {
         width: 80%;
         .features-slideTxt {
-          h1 {
+          margin-right: 20px;
+          .irashom {
+            display: inline-flex;
+          }
+          .trinam {
             display: none;
           }
-          p {
+          p, h1 {
             line-height: 1.3;
             text-align: right;
-            margin-right: 10px;
+
           }
         }
       }
@@ -99,7 +108,7 @@
 
   #reviews {
     .reviewsTop h1 {
-      font-size: $chshreFontSize-1-coma-6;
+      // font-size: $chshreFontSize-1-coma-6;
       margin-top: 25px;
     }
     .rvws-slide-chat {
@@ -120,8 +129,11 @@
 
 }
 
-@media (max-width: 700px){
-
+@media (max-width: 700px) {
+  h1 {
+    font-size: $chshreFontSize-1-coma-4;
+    text-align: center;
+  }
   nav {
     .menu-wrap {
       ul {
@@ -133,28 +145,30 @@
       }
     }
   }
-}
 
-.logo {
-  margin-top: 15px;
-}
+  .logo {
+    margin-top: 15px;
+  }
 
   nav .nav-wrap .menu-burger{
     display: block;
   }
 
   #home {
-h1 {
-      font-size: $chshreFontSize-1-coma-4;
-    }
+// h1 {
+//       font-size: $chshreFontSize-1-coma-4;
+//     }
     .home-form {
       .formFoot {
         height: 45px;
         h2 {
           font-size: $chshreFontSize-1-coma-2;
         }
+        .First-Form-Button {
+          font-size: $chshreFontSize-1-coma-1;
+          font-weight: $chshreFontWGHT-400;
+        }
       }
-
     }
     .radio {
       h4 {
@@ -178,44 +192,31 @@ h1 {
       // display: none;
       width: 180px;
     }
-}
 
-#awesomeBar {
-display: none;
-}
+    #features {
+  .features-slideTxt h1{
+            text-align: right;
+          }
+        }
 
-#pricing {
-  .layerTwo{
-    height:100%;
+  #awesomeBar {
+    display: none;
   }
-  .prisingTop h1 {
-    font-size: $chshreFontSize-1-coma-6;
-    margin-top: 25px;
-  }
-  .prisingTop p {
-    text-align: center;
-  }
-}
 
-  #reviews {
-    .reviewsTop {
-      margin-bottom: 60px;
-      hr {
-        margin-top: 20px;
-      }
+  #pricing {
+    .layerTwo{
+      height:100%;
     }
-    .reviewsTop h1 {
-      font-size: $chshreFontSize-1-coma-4;
+    .prisingTop h1 {
+      // font-size: $chshreFontSize-1-coma-6;
+      margin-top: 25px;
+    }
+    .prisingTop p {
       text-align: center;
-    }
-    .avatars-name {
-      left: 30%;
     }
   }
 
   #contacts {
-
-  }
   footer {
     display: flex;
     flex-flow: column;
@@ -234,4 +235,6 @@ display: none;
       font-size: 14px;
     }
   }
+}
+}
 }
