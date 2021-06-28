@@ -9,10 +9,14 @@
       width: 80%;
       .home-text {
         width: 50%;
+        .mqh {
+          display: inline-flex;
+        }
+        .mqhh {
+          display: none;
+        }
       }
-      .home-text img {
-        display: none;
-      }
+
       .home-form {
         width: 45%;
         .formHead h2 {
@@ -170,7 +174,14 @@ h1 {
         margin-bottom: 5px;
       }
     }
-
+    .home-text {
+      flex-flow: column-reverse;
+      // flex-wrap: wrap-reverse;
+    }
+    .home-text img {
+      // display: none;
+      width: 180px;
+    }
 }
 
 #awesomeBar {

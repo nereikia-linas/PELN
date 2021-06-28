@@ -46,6 +46,9 @@
       box-shadow: $cheshire-Shadow;
       cursor: pointer;
     }
+    .mqh {
+      display: none;
+    }
   }
   @import "form";
 }
